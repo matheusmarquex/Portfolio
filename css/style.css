@@ -1,0 +1,394 @@
+body
+{
+    background-color: rgb(53, 53, 53);
+    
+}
+.aumentanc{
+    height:60px;
+}
+/* NAVEGAÇÃO */
+nav{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(20, 20, 20);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav>h1
+{
+    display: none;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    margin-left: -30px;
+    margin-top: 12px;
+    
+
+}
+ul > li
+{
+    font-weight: 500;
+    padding: 1px;
+    cursor: pointer;
+   
+   
+    
+}
+ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+ul > li > a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    /* padding: 5px; */
+}
+
+#social
+{
+
+    position: relative;
+    top: -55px;
+    float: right;
+    right: 10px;
+    
+}
+#social > a > img
+{
+    position: relative;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+    padding-left: 2px;
+}
+
+/* CABEÇALHO */
+#cabecalho{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    font-family: 'Space Mono', monospace;
+    z-index: 2;
+    
+}
+
+.foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto > img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px; 
+    
+    
+}
+
+.foto h2{
+    margin-bottom: 5px;
+    color: rgb(20, 20, 20);
+
+}
+.foto h3{
+    font-size: 12px;
+    margin: 0;
+  
+}
+.divh3{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+    width: max-content;
+}
+
+.btn{
+    margin-top: 20px;
+    background-color: rgb(30, 50, 230);
+    border-radius: 6px;
+    padding: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    
+
+}
+/* sobre */
+#sobre{
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    margin-top: 0;
+    background-color: rgb(36, 36, 36);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    text-align: center;
+    color: rgb(221, 221, 221);
+    padding-bottom: 60px;
+    z-index: 3;
+
+}
+.titulosh2div
+{
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 2px;
+    margin-top: 15px;
+    width: max-content;
+}
+#sobre h2{
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sobre p
+{
+    text-align: justify;
+    margin: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+/* skills */
+#skills{
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    margin-top: 0;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 60px;
+    z-index: 5;
+}
+#skills h2{
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+#skills img
+{
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+}
+.imgskill{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* PROJETOS */
+#projetos
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(20, 20, 20);
+    padding-bottom: 120px;
+    z-index: 4;
+
+    
+}
+#projetos h2{ 
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+.card{
+    -webkit-box-shadow: 1px 1px 1px 2px rgba(173, 173, 173, 0.77);
+	-moz-box-shadow:    1px 1px 1px 2px rgba(173, 173, 173, 0.77);
+	box-shadow:         1px 1px 1px 2px rgba(173, 173, 173, 0.77);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    width: max-content;
+    height: max-content;
+    
+
+}
+.card h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.card p{
+  
+    margin: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+#imgproject
+{
+    border: 1px solid rgb(97, 97, 97);
+    width: 270px;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+}
+/* CONTATO */
+
+#contato{
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    margin-top: 0;
+    background-color:  rgb(36, 36, 36);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    text-align: center;
+    padding-bottom: 60px;
+    z-index: 3;
+}
+#contato h2 {
+    
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(221, 221, 221);
+}
+#linkscontato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    
+    
+}
+#linkscontato h2 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#linkscontato a{
+    display: inline-block;
+    font-family: 'Oswald', Arial;
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    font-weight: 500;
+    
+}
+
+footer
+{
+    display: inline-block;
+    background-color: black;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    height: 100px;
+    
+}
+footer h2{
+     color: rgb(221, 221, 221);
+    font-family:'Space Mono', monospace;
+    font-size: 10px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 728px)
+{
+   
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    nav > ul > li{
+        padding: 10px;
+    }
+    nav > h1{
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        
+    }  
+    nav #social{
+        top:-70px;
+    }
+    #cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        margin-right: 30px;
+    }
+    
+    .containerskills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgskill{
+        
+        position: relative;
+        padding-right: 100px;
+        left: 12vh;
+    }
+
+  
+}
+
+    
